@@ -4,7 +4,7 @@ Personal portfolio for Samrajnee Bhattacharjee, a final-year Computer Science En
 
 ## Live site
 
-[Add your live Vercel URL here once deployed]
+(https://portfoliosamrajnee.vercel.app/)
 
 ## Tech stack
 
@@ -15,6 +15,4 @@ Personal portfolio for Samrajnee Bhattacharjee, a final-year Computer Science En
 
 ## Architecture
 
-<!-- This site is intentionally data-driven: every section (Projects, Experience, Education, Skills, Achievements, etc.) reads from a typed data file in `src/data/`, rather than having content hardcoded into components. Updating the site later means editing a data file, not touching any component or layout code. -->
-
-My Portfolio
+This site is intentionally data-driven: every section (Projects, Experience, Education, Skills, Achievements, etc.) reads from a typed data file in `src/data/`, rather than having content hardcoded into components. Updating the site later means editing a data file, not touching any component or layout code.

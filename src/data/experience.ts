@@ -21,7 +21,6 @@ export const experience: Experience[] = [
           "Conducted end-to-end interviews and hired 7 candidates over 3 months, including orientation and policy briefings.",
           "Helped implement HR policies covering pay structure, paid leave, field-work incentives, completion bonuses, and work documentation.",
         ],
-        credentialUrl: "/certificates/masa-forum-completion-certificate.pdf",
       },
       {
         id: "masa-webdev",
@@ -34,6 +33,9 @@ export const experience: Experience[] = [
           "Served as Executive Associate to the Founder-Director, coordinating board-level communications, organising conclaves and expos, and liaising with national banks and elected representatives as keynote stakeholders.",
           "Designed the organisation's annual magazine end to end using Canva and converted it to a digital flipbook.",
         ],
+
+        credentialUrl: "/certificates/masa-forum-completion-certificate.pdf",
+
       },
     ],
   },

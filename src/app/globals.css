@@ -13,9 +13,26 @@
   --animate-marquee: marquee var(--marquee-duration, 28s) linear infinite;
 }
 
+.dark {
+  --color-background: #171613;
+  --color-ink: #F1EEE6;
+  --color-muted: #A8A296;
+  --color-accent: #C9A876;
+  --color-hairline: #3A3833;
+  color-scheme: dark;
+}
+
+:root {
+  color-scheme: light;
+}
+
 @keyframes marquee {
-  0% { transform: translateX(0%); }
-  100% { transform: translateX(-50%); }
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 body {
