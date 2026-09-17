@@ -3,7 +3,7 @@ import { fraunces, plexSans } from "@/lib/fonts";
 import { profile } from "@/data/profile";
 import "./globals.css";
 
-const siteUrl = "https://samrajnee-portfolio.vercel.app";
+const siteUrl = "https://codewithsamrajnee.vercel.app/";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),

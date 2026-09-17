@@ -5,7 +5,7 @@ export const profile: Profile = {
   role: "Computer Science Engineer",
   location: "Kolkata, India",
   email: "samrajnee30@gmail.com",
-  phone: "+91 7980059521",
+  //phone: "+91 7980059521",
   linkedin: "https://linkedin.com/in/samrajneebhattacharjee",
   github: "https://github.com/Samrajnee",
   resumeUrl: "/resume.pdf",

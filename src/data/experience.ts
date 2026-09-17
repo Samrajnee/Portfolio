@@ -9,6 +9,7 @@ export const experience: Experience[] = [
     startDate: "",
     endDate: "",
     bullets: [],
+    credentialUrl: "/certificates/masa-forum-completion-certificate.pdf",
     roles: [
       {
         id: "masa-hr",
@@ -33,9 +34,6 @@ export const experience: Experience[] = [
           "Served as Executive Associate to the Founder-Director, coordinating board-level communications, organising conclaves and expos, and liaising with national banks and elected representatives as keynote stakeholders.",
           "Designed the organisation's annual magazine end to end using Canva and converted it to a digital flipbook.",
         ],
-
-        credentialUrl: "/certificates/masa-forum-completion-certificate.pdf",
-
       },
     ],
   },
@@ -56,7 +54,7 @@ export const experience: Experience[] = [
     id: "swastikk-ai-tech",
     role: "Co-Founder & Chief Management Officer",
     organisation: "Swastikk AI Tech Pvt. Ltd.",
-    location: "Jamshedpur, Jharkhand, India (Hybrid)",
+    location: "Jamshedpur, Jharkhand, India (Remote)",
     startDate: "May 2024",
     endDate: "Jun 2025",
     bullets: [

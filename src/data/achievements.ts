@@ -15,7 +15,7 @@ export const achievements: Achievement[] = [
     id: "smart-bengal-hackathon",
     title: "Smart Bengal Hackathon (Grand Finalist)",
     category: "hackathon",
-    organisation: "RCCIIT",
+    organisation: "West Bengal University of Technology",
     date: "Apr 2024",
     description:
       "Led a 6-member team building an AI-powered EdTech platform that curates personalised study plans and solutions based on each student's specific problems and needs.",

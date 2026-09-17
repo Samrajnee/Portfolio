@@ -3,7 +3,7 @@ import { education } from "@/data/education";
 import { languages } from "@/data/languages";
 import { levelToFill } from "@/lib/cefr";
 
-const currentEducation = education[0]; // most recent entry — MAKAUT
+const currentEducation = education[0]; // most recent entry - MAKAUT
 const cefrOrder = ["A1", "A2", "B1", "B2", "C1", "C2"];
 
 export function About() {
