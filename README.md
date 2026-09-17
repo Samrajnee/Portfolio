@@ -4,7 +4,7 @@ Personal portfolio for Samrajnee Bhattacharjee, a final-year Computer Science En
 
 ## Live site
 
-(https://codewithsamrajnee.vercel.app/)
+https://codewithsamrajnee.vercel.app/
 
 ## Tech stack
 
