@@ -2,6 +2,7 @@ import { Project } from "@/types";
 
 export const projects: Project[] = [
   {
+    imageUrl: "/projects/campuschain-dashboard.png",
     id: "campuschain",
     title: "CampusChain: Campus Operating System",
     status: "MVP · Testing Phase · Potential Final-year Project",

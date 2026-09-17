@@ -5,25 +5,22 @@ import { profile } from "@/data/profile";
 import { openSourceContributions } from "@/data/openSource";
 import { ThemeToggle } from "@/components/ui/ThemeToggle";
 
-const baseLinks = [
-  { href: "#about", label: "About" },
-  { href: "#projects", label: "Projects" },
-  { href: "#experience", label: "Experience" },
-  { href: "#education", label: "Education" },
-  { href: "#skills", label: "Skills" },
-  { href: "#hackathons", label: "Hackathons" },
-  { href: "#achievements", label: "Achievements" },
-  { href: "#open-source", label: "Open Source" },
-  { href: "#contact", label: "Contact" },
-];
-
 export function Nav() {
   const [open, setOpen] = useState(false);
 
-  const links = baseLinks.filter(
-    (link) =>
-      link.href !== "#open-source" || openSourceContributions.length > 0
-  );
+  const links = [
+    { href: "#about", label: "About" },
+    { href: "#projects", label: "Projects" },
+    { href: "#experience", label: "Experience" },
+    { href: "#education", label: "Education" },
+    { href: "#skills", label: "Skills" },
+    { href: "#hackathons", label: "Hackathons" },
+    { href: "#achievements", label: "Achievements" },
+    ...(openSourceContributions.length > 0
+      ? [{ href: "#open-source", label: "Open Source" }]
+      : []),
+    { href: "#contact", label: "Contact" },
+  ];
 
   return (
     <header className="sticky top-0 z-40 bg-background border-b border-hairline">
@@ -69,7 +66,7 @@ export function Nav() {
             />
             <span
               className={`block h-px w-5 bg-ink transition-transform ${
-                open ? "-translate-y-[3.5px] -rotate-45" : ""
+                open ? "translate-y-[-3.5px] -rotate-45" : ""
               }`}
             />
           </button>

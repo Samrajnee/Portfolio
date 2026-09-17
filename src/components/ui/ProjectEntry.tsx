@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Project } from "@/types";
 
 export function ProjectEntry({ project }: { project: Project }) {
@@ -5,6 +6,18 @@ export function ProjectEntry({ project }: { project: Project }) {
 
   return (
     <article className="border-t border-hairline pt-10">
+      {project.imageUrl && (
+        <div className="relative aspect-video border border-hairline mb-6 overflow-hidden">
+          <Image
+            src={project.imageUrl}
+            alt={`${project.title} preview`}
+            fill
+            sizes="(max-width: 768px) 100vw, 800px"
+            className="object-cover"
+          />
+        </div>
+      )}
+
       <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-2">
         <div className="flex items-baseline gap-3 flex-wrap">
           <h3 className="font-heading text-2xl md:text-3xl text-ink">
@@ -31,7 +44,10 @@ export function ProjectEntry({ project }: { project: Project }) {
 
       <ul className="mt-6 space-y-3 font-body text-base text-ink leading-relaxed max-w-[68ch]">
         {project.description.map((line, i) => (
-          <li key={i} className="pl-4 border-l border-hairline">
+          <li
+            key={i}
+            className="pl-4 border-l border-hairline"
+          >
             {line}
           </li>
         ))}

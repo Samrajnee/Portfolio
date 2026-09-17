@@ -16,16 +16,17 @@ export interface Profile {
 }
 
 export interface Project {
-  id: string; // slug, used as React key - keep stable once set
+  id: string;
   title: string;
-  status?: string; // e.g. "Pre-MVP · Testing Phase"
-  period: string; // e.g. "2024 to Present"
-  description: string[]; // one entry per bullet point
+  status?: string;
+  period: string;
+  description: string[];
   stack: string[];
   githubUrl?: string;
-  liveUrl: string; // always present - every project ships to a live URL
-  stage?: "live" | "in-progress"; // compact tag shown next to the title
-  featured?: boolean; // true = shown prominently (e.g. CampusChain)
+  liveUrl: string;
+  stage?: "live" | "in-progress";
+  featured?: boolean;
+  imageUrl?: string; // optional preview screenshot, path under /public
 }
 
 export interface ExperienceRole {
