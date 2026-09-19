@@ -4,10 +4,11 @@ import { getGithubOgImage } from "@/lib/github";
 
 export function ProjectEntry({ project }: { project: Project }) {
   const hasDistinctLiveUrl = project.liveUrl !== project.githubUrl;
-  const previewImage = project.imageUrl || getGithubOgImage(project.githubUrl);
+  const previewImage =
+    project.imageUrl || getGithubOgImage(project.githubUrl);
 
   return (
-    <article className="group border border-hairline rounded-lg overflow-hidden hover:border-accent hover:shadow-md transition-all">
+    <article className="group h-full flex flex-col border border-hairline rounded-lg overflow-hidden hover:border-accent hover:shadow-md transition-all">
       <div className="relative aspect-video bg-background border-b border-hairline overflow-hidden">
         {previewImage ? (
           <Image
@@ -25,24 +26,25 @@ export function ProjectEntry({ project }: { project: Project }) {
           </div>
         )}
 
-       {project.stage && (
-  <span
-    className={
-      project.stage === "live"
-        ? "absolute top-3 right-3 font-body text-xs text-live bg-background border border-live px-2 py-0.5"
-        : "absolute top-3 right-3 font-body text-xs text-accent bg-background border border-accent px-2 py-0.5"
-    }
-  >
-    {project.stage === "live" ? "Live" : "In progress"}
-  </span>
-)}
+        {project.stage && (
+          <span
+            className={
+              project.stage === "live"
+                ? "absolute top-3 right-3 font-body text-xs text-live bg-background border border-live px-2 py-0.5"
+                : "absolute top-3 right-3 font-body text-xs text-accent bg-background border border-accent px-2 py-0.5"
+            }
+          >
+            {project.stage === "live" ? "Live" : "In progress"}
+          </span>
+        )}
       </div>
 
-      <div className="p-6">
+      <div className="p-6 flex flex-col flex-1">
         <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-2">
           <h3 className="font-heading text-2xl md:text-3xl text-ink">
             {project.title}
           </h3>
+
           <span className="font-body text-sm text-muted">
             {project.period}
           </span>
@@ -69,7 +71,7 @@ export function ProjectEntry({ project }: { project: Project }) {
           ))}
         </div>
 
-        <div className="flex gap-4 mt-6">
+        <div className="flex gap-4 mt-auto pt-6">
           {project.githubUrl && (
             <a
               href={project.githubUrl}
