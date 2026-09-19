@@ -6,6 +6,7 @@
   --color-muted: #5C5A54;
   --color-accent: #8A6D3B;
   --color-hairline: #D8D4C9;
+  --color-live: #3F7355;
 
   --font-heading: var(--font-fraunces), serif;
   --font-body: var(--font-plex-sans), sans-serif;
@@ -19,6 +20,7 @@
   --color-muted: #A8A296;
   --color-accent: #C9A876;
   --color-hairline: #3A3833;
+  --color-live: #7BAE8C;
   color-scheme: dark;
 }
 

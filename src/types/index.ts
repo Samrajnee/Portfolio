@@ -18,6 +18,7 @@ export interface Profile {
 export interface Project {
   id: string;
   title: string;
+  tagline: string; // one-line summary shown on the card; full description[] stays as your own record
   status?: string;
   period: string;
   description: string[];
@@ -26,7 +27,7 @@ export interface Project {
   liveUrl: string;
   stage?: "live" | "in-progress";
   featured?: boolean;
-  imageUrl?: string; // optional preview screenshot, path under /public
+  imageUrl?: string;
 }
 
 export interface ExperienceRole {

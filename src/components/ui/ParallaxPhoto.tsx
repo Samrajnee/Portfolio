@@ -42,8 +42,10 @@ export function ParallaxPhoto({ src, alt }: { src: string; alt: string }) {
   return (
     <div
       ref={containerRef}
-      className="rounded-2xl aspect-[4/5] relative overflow-hidden shadow-[inset_0_1px_2px_rgba(255,255,255,0.7),inset_0_-1px_2px_rgba(0,0,0,0.2),0_8px_20px_rgba(26,26,24,0.15)]"
+      className="group rounded-2xl aspect-4/5 relative overflow-hidden shadow-[inset_0_1px_2px_rgba(255,255,255,0.7),inset_0_-1px_2px_rgba(0,0,0,0.2),0_8px_20px_rgba(26,26,24,0.15)]"
     >
+      {/* imageWrap handles the scroll-driven parallax (JS-controlled
+          inline transform). */}
       <div ref={imageWrapRef} className="absolute -inset-y-6 inset-x-0">
         <Image
           src={src}
@@ -54,6 +56,7 @@ export function ParallaxPhoto({ src, alt }: { src: string; alt: string }) {
           className="object-cover"
         />
       </div>
+
       <div
         aria-hidden="true"
         className="pointer-events-none absolute top-[8%] left-[8%] w-[35%] h-[20%] rounded-full bg-white/25 blur-lg"

@@ -2,25 +2,22 @@
 
 import { useState } from "react";
 import { profile } from "@/data/profile";
-import { openSourceContributions } from "@/data/openSource";
 import { ThemeToggle } from "@/components/ui/ThemeToggle";
 
 export function Nav() {
   const [open, setOpen] = useState(false);
 
   const links = [
-    { href: "#about", label: "About" },
-    { href: "#projects", label: "Projects" },
-    { href: "#experience", label: "Experience" },
-    { href: "#education", label: "Education" },
-    { href: "#skills", label: "Skills" },
-    { href: "#hackathons", label: "Hackathons" },
-    { href: "#achievements", label: "Achievements" },
-    ...(openSourceContributions.length > 0
-      ? [{ href: "#open-source", label: "Open Source" }]
-      : []),
-    { href: "#contact", label: "Contact" },
-  ];
+  { href: "#about", label: "About" },
+  { href: "#projects", label: "Projects" },
+  { href: "#experience", label: "Experience" },
+  { href: "#education", label: "Education" },
+  { href: "#skills", label: "Skills" },
+  { href: "#hackathons", label: "Hackathons" },
+  { href: "#achievements", label: "Achievements" },
+  { href: "#open-source", label: "Open Source" },
+  { href: "#contact", label: "Contact" },
+];
 
   return (
     <header className="sticky top-0 z-40 bg-background border-b border-hairline">
