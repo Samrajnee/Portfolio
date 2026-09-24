@@ -45,7 +45,7 @@ export const experience: Experience[] = [
     startDate: "Apr 2025",
     endDate: "Jun 2025",
     bullets: [
-      "Set up MSME Times' Instagram (@msme_times) from zero to 6,500+ followers, and established its LinkedIn presence (70+ followers at handover).",
+      "Set up MSME Times' Instagram (@msme_times) from zero to 6,500+ followers, and established its LinkedIn presence (150+ followers at handover).",
       "Initiated the msmetimes.in website build, laying the initial development groundwork before internship completion.",
       "Spearheaded the launch of a new business media platform focused on MSMEs, defining the vision, mission, and long-term growth strategy.",
     ],
